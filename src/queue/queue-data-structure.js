@@ -5,7 +5,7 @@ class Queue {
   }
 
   canEnqueue() {
-    if (this.queueControl < this.MAX_SIZE) {
+    if (this.queueControl.length < this.MAX_SIZE) {
       return true;
     }
     return false;
@@ -19,7 +19,6 @@ class Queue {
   }
 
   enqueue(item) {
-    // ... your code goes here
     if (this.canEnqueue()) {
       this.queueControl.push(item);
       return this.queueControl;

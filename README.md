@@ -39,27 +39,17 @@ $ git push origin master
 
 - Create a Pull Request so that your TAs can check your work.
 
-
-
 <br>
 
 ## Test Your Code
 
 This LAB is equipped with unit tests to provide automated feedback on your lab progress. In case you want to check the tests, the files are located in the `tests/` folder.
 
-
-
 To run the tests and your JavaScript code, open the `SpecRunner.html` file using the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) VSCode extension.
-
-
 
 To see the outputs of the `console.log` in your JavaScript code, open the [Console in the Developer Tools](https://developer.chrome.com/docs/devtools/open/#console).
 
 <br>
-
-
-
-
 
 ## Instructions
 
@@ -72,8 +62,6 @@ This exercise is split into two parts:
 - **Visual**: where you will use your DOM manipulation skills to demonstrate how actually stack and queue work. When you come to this part, you will be working on the `src/stack/stack-dom.js` and `src/queue/queue-dom.js`.
 
 <br>
-
-
 
 ## Iteration 0 - Read about Stacks & Queues
 
@@ -103,13 +91,9 @@ The process of adding an element into the queue is called **enqueue**, and the p
 
 <br>
 
-
-
-
-
 ### Iteration 1 - The Stack class
 
-The first abstract data structure we are going to build is the `Stack`. For this iteration, you'll be working in the **`src/stack/stack-data-structure.js`** file. 
+The first abstract data structure we are going to build is the `Stack`. For this iteration, you'll be working in the **`src/stack/stack-data-structure.js`** file.
 
 The tests you will be using while developing the solution are in the `tests/01-stack-data-structure.spec.js` file.
 
@@ -147,7 +131,7 @@ If the value returned by `canPush` is `true`, you should add the item to the `st
 If the value returned is `false`, we have a case of "**Stack Overflow**". Stack Overflow occurs when we try to add an element into a stack that is already full. This operation shouldn't be allowed. As such, instead of adding the item the the `stackControl` array, throw an error with the message `'STACK_OVERFLOW'`.
 
 ```js
-throw new Error('STACK_OVERFLOW');
+throw new Error("STACK_OVERFLOW");
 ```
 
 #### Stack method `pop`
@@ -207,7 +191,7 @@ If the value returned by `canEnqueue` is `true`, you should add the item to the 
 If the value returned is `false`, we have a case of "**Queue Overflow**". Queue Overflow occurs when we try to add an element into a queue that is already full. This operation shouldn't be allowed. As such, instead of adding the item the the `queueControl` array, throw an error with the message `'QUEUE_OVERFLOW'`.
 
 ```js
-throw new Error('QUEUE_OVERFLOW');
+throw new Error("QUEUE_OVERFLOW");
 ```
 
 #### Queue method `dequeue`
